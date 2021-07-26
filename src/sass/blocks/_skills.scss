@@ -1,0 +1,51 @@
+.skills {
+    display: block;
+    margin-top: 120px;
+    .line {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 15px;
+        justify-content: center;
+    }
+    &__item {
+        padding: 30px 29px 25px 30px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        .title_fz14-black {
+            margin-top: 20px;
+        }
+        .title_fz12 {
+            margin-top: 3px;
+        }
+    }
+
+    .progress {
+        margin-top: 128px;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 46px;
+        justify-content: center;
+        &__subtitle {
+            position: relative;
+            @include brown_circle;
+            &:before {
+                top: -6px;
+                left: 0;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__line {
+            margin-top: 27px;
+            height: 14px;
+            background: $brown;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.about-me {
+    &__wrapper {
+        display: grid;
+        padding: 120px 0 120px 0;
+        grid-template-columns: 400px 570px;
+        grid-template-rows: 250px 250px;
+        column-gap: 70px;
+        row-gap: 40px;
+        grid-template-areas: 
+        "photo me"
+        "photo skill"
+    }
+    &__photo {
+        margin-right: 70px;
+        img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }  
+    }
+    &__web {
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include about_circle;
+        img {
+            padding-right: 20px;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include brown_circle;
+        color: black;
+    }
+
+    .line{
+        margin-bottom: 15px;
+    }
+}
+
+#photo {
+    grid-area: photo;
+    width: 100%;
+}
+
+#me {
+    grid-area: me;
+}
+
+#skill {
+    grid-area:skill; 
+}
+

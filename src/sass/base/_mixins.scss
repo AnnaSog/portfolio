@@ -1,0 +1,41 @@
+@mixin before_circle {
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+    }
+}
+
+@mixin brown_circle {
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $brown;
+    }
+}
+
+@mixin about_circle {
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 4%;
+        left: -7px;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $brown;
+    }
+}
