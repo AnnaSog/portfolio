@@ -28,7 +28,7 @@
     } 
 
     .portfolio {
-        &__wrapper {
+        &__wrapper, .game {
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
             justify-content: space-around;
@@ -266,7 +266,7 @@
         .progress {
             margin-top: 40px;
             grid-template-columns: 300px;
-            grid-template-rows: repeat(5, 70px);
+            grid-template-rows: repeat(3, 70px);
             &__subtitle {
                 &:before {
                     left: 18px;
