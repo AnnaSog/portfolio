@@ -28,7 +28,7 @@
     } 
 
     .portfolio {
-        &__wrapper, .game {
+        &__wrapper, .game, .react {
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
             justify-content: space-around;
@@ -116,6 +116,7 @@
 
         &__triggers {
             grid-template-columns: auto;
+            grid-gap: 15px;
             grid-column: 1 / 2;
         }
         &__policy {
@@ -146,11 +147,12 @@
         &__wrapper {
             padding-top: 40px;
             grid-template-columns: 1fr;
-            grid-template-rows: 450px auto auto;
+            grid-template-rows: 450px auto;
+            row-gap: 40px;
             grid-template-areas: 
             "photo photo"
-            "me me"
-            "skill skill";
+            "me me";
+            // "skill skill";
         }
     }
 
@@ -203,6 +205,9 @@
             font-size: 24px;
             line-height: 36px;
         }
+        &_fz21 {
+            margin-top: 15%;
+        }
     }
     .hamburger {
         right: 20px;
@@ -226,7 +231,7 @@
     .about-me {
         &__wrapper {
             grid-template-columns: 1fr;
-            grid-template-rows: 340px auto auto;
+            grid-template-rows: 340px auto;
         }
         .title_fz23 {
             font-size: 20px;
@@ -282,6 +287,9 @@
         }
         &__photo {
             display: none;
+        }
+        &__triggers {
+            grid-gap: 0;
         }
         &__me {
             margin: 0;
