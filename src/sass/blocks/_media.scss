@@ -155,7 +155,11 @@
             // "skill skill";
         }
     }
-
+    .resume {
+        &__wrapper {
+            width: 100%;
+        }
+    }
     .skills {
         &__wrapper {
             grid-template-columns:repeat(2, 260px);
@@ -240,10 +244,11 @@
 
     .resume {
         &__wrapper {
+            width: 100%;
             grid-template-columns: 292px;
             justify-content: center;
             row-gap: 50px;
-            margin-right: 12px;
+            // margin-right: 12px;
         }
         &__column {
             &-title {

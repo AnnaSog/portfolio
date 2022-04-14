@@ -4,10 +4,15 @@
         margin-top: 20px;
     }
     &__wrapper {
+        margin: 0 auto;
         padding: 60px 65px 0 65px;
-        display: grid;
-        grid-template-columns: repeat(2, 425px);
-        column-gap: 135px;
+        // display: grid;
+        // grid-template-columns: repeat(2, 425px);
+        // column-gap: 135px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
     }
     &__column {
         &-title {
@@ -40,6 +45,9 @@
                 }
             }
         }
+    }
+    .experience{
+        margin-top: 8%;
     }
     &__item {
         position: relative;

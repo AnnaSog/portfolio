@@ -15,11 +15,11 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // указываем нужную почту
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = '9629178928@mail.ru';                 // Наш логин
-$mail->Password = '***********';                           //пароль от ящика
+$mail->Password = 'pkSQwbxnw4S1y0m0dlKF';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('9629178928@mail.ru', 'Portfolio');   // От кого письмо 
+$mail->setFrom('9629178928@mail.ru', 'Potrfolio');   // От кого письмо 
 $mail->addAddress('anna87-07@inbox.ru');     // Куда будут приходить письма
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
